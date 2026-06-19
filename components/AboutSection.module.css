@@ -1,0 +1,102 @@
+.section {
+  position: relative;
+  padding: 8rem 2.5rem;
+  background: var(--black);
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.labelNum {
+  color: rgba(245, 240, 232, 0.3);
+  font-family: var(--font-display);
+}
+
+.line {
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: var(--gold);
+  transform-origin: left;
+}
+
+.content {
+  display: block;
+}
+
+.content > * {
+  opacity: 0;
+}
+
+.lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  line-height: 1.4;
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  max-width: 850px;
+}
+
+.lead em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(245, 240, 232, 0.6);
+  max-width: 650px;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.stats {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(245, 240, 232, 0.1);
+  padding-top: 2.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.statNum {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: rgba(245, 240, 232, 0.45);
+  letter-spacing: 0.04em;
+  max-width: 140px;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 5rem 1.5rem;
+  }
+  .stats {
+    gap: 2.5rem;
+  }
+}

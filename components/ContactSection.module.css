@@ -1,0 +1,149 @@
+.section {
+  padding: 6rem 2.5rem 3rem;
+  background: var(--black);
+  border-top: 1px solid rgba(245, 240, 232, 0.08);
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.inner > * {
+  opacity: 0;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.labelNum {
+  color: rgba(245, 240, 232, 0.3);
+  font-family: var(--font-display);
+}
+
+.line {
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.15;
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.headingGold {
+  color: var(--gold);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(245, 240, 232, 0.1);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.contactItem:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.contactLabel {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(245, 240, 232, 0.4);
+}
+
+.contactValue {
+  font-size: 1.05rem;
+  color: var(--white);
+}
+
+.education {
+  border-top: 1px solid rgba(245, 240, 232, 0.1);
+  padding-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.eduTitle {
+  font-family: var(--font-display);
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.eduItem {
+  margin-bottom: 1.5rem;
+}
+
+.eduItem:last-child {
+  margin-bottom: 0;
+}
+
+.eduRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.eduDegree {
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+.eduYear {
+  font-size: 0.8rem;
+  color: var(--gold);
+}
+
+.eduSchool {
+  font-size: 0.85rem;
+  color: rgba(245, 240, 232, 0.45);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(245, 240, 232, 0.08);
+  font-size: 0.78rem;
+  color: rgba(245, 240, 232, 0.35);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 4rem 1.5rem 2rem;
+  }
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
